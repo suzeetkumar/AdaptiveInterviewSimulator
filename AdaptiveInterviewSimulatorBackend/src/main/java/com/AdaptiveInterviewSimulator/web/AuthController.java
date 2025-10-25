@@ -41,11 +41,16 @@ public class AuthController {
             );
             UserPrincipal principal = (UserPrincipal) auth.getPrincipal();
             String jwt = jwtUtil.generateToken(principal.getUsername());
-            return ResponseEntity.ok(jwt);
+
+            // Wrap token in a DTO instead of returning raw string
+            AuthResponse response = new AuthResponse(jwt, "Bearer");
+            return ResponseEntity.ok(response);
+
         } catch (BadCredentialsException ex) {
             return ResponseEntity.status(401).body("Invalid credentials");
         }
     }
+
 
     // example
     @GetMapping("/me")
