@@ -1,0 +1,18 @@
+.audio-recorder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+}
+.record-btn,
+.stop-btn {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.stop-btn {
+  background-color: #dc2626;
+}

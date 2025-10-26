@@ -1,0 +1,24 @@
+.session-list {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.session-list h2 {
+  margin-bottom: 10px;
+}
+.session-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.session-list th,
+.session-list td {
+  text-align: left;
+  padding: 8px;
+}
+.session-list th {
+  background: #f3f4f6;
+}
+.session-list tr:nth-child(even) {
+  background: #fafafa;
+}

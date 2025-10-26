@@ -1,0 +1,7 @@
+CREATE TABLE embeddings (
+  id BIGINT AUTO_INCREMENT PRIMARY KEY,
+  source_type VARCHAR(64),
+  source_id BIGINT,
+  vector JSON,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

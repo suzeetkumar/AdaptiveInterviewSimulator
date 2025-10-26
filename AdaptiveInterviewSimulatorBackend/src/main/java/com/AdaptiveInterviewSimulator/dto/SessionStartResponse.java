@@ -7,4 +7,7 @@ public class SessionStartResponse {
     private Long sessionId;
     private Integer sequenceIndex;
     private String promptText;
+
+    public SessionStartResponse(Long id, Integer sequenceIndex, String promptText) {
+    }
 }
